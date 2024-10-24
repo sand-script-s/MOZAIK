@@ -1,0 +1,32 @@
+.paypal-wrapper {
+    width: 500px;
+    background-color: rgb(190, 212, 230);
+    padding: 2em;
+    z-index: 1;
+}
+
+.paypaldiv {
+    display: flex;
+    justify-content: center ;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+/* ------------------------- Media Queries ------------------------- */
+
+@media (max-width: 880px) {
+
+    .paypal-wrapper {
+        width: 370px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .paypal-wrapper {
+        width: 260px;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+:root {
+    --text-golden: rgb(233, 172, 18);
+}
+
+#returnpage {
+    background-image: url(../../images/return/sand.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#inner-return {
+    /* Glass effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
+    background-color: #79797938; /*#38607e60; for a dark mode?*/
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.collage-header {
+    color: var(--text-golden);
+}
+
+.underline-return-main {
+    width: 90px;
+    border-top-color: var(--text-golden);
+}
+
+.underline-return-second {
+    width: 55px;
+    border-top-color: var(--text-golden);
+}

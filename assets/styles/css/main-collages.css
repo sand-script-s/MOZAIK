@@ -1,8 +1,3 @@
-:root {
-    --text-alice:aliceblue;
-    --text-golden: rgb(233, 172, 18);
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -39,12 +34,34 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 
-    /* Glass effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
-    background-color: #1d566b51; /*#38607e60; for a dark mode?*/
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+.collage-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 2px;
+}
+
+.underblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 25px;
+}
+
+.underline-outercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.underline-style {
+    border-top-width: 2px;
+    border-top-style: solid;
 }
 
 .flex-inner {
@@ -99,54 +116,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     margin: 2%;
-    vertical-align: middle;
-    color: var(--text-alice);
-}
-
-.collage-header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.9em;
-    font-weight: 600;
-    text-align: center;
-    color: var(--text-golden);
-    padding-top: 23px;
-    padding-bottom: 2px;
-}
-
-#invitationpage {
-    background-image: url(../../images/invitation/wall.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.underblock {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 25px;
-}
-
-.underline-outercontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 5px;
-}
-
-#invitation-underline-main {
-    border-top-width: 2px;
-    border-top-color: var(--text-golden);
-    border-top-style: solid;
-    width: 144px;
-}
-
-#invitation-underline-second {
-    border-top-width: 2px;
-    border-top-color: var(--text-golden);
-    border-top-style: solid;
-    width: 124px;
 }
 
 /* ------------------------- Media Queries ------------------------- */

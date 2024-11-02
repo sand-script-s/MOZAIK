@@ -108,6 +108,16 @@ body {
     background-color: var(--hover-purple);
 }
 
+.menu-selected-main .inner-wrapper {
+    color: var(--selected-main);
+}
+
+.menu-selected-main .inner-wrapper:hover{
+    color: var(--selected-main);
+    background-color: var(--hover-purple);
+}
+
+
 .sub-menu {
     display: none;
 }

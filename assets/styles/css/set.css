@@ -1,0 +1,38 @@
+:root {
+    --text-golden: rgb(241, 192, 66);
+    --text-alice:rgb(26, 9, 121);
+}
+
+#setpage {
+    background-image: url(../../images/set/twig.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#inner-return {
+    /* Glass effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
+    background-color: #79797938; /*#38607e60; for a dark mode?*/
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.collage-header {
+    color: var(--text-golden);
+}
+
+.underline-return-main {
+    width: 55px;
+    border-top-color: var(--text-golden);
+}
+
+.underline-return-second {
+    width: 35px;
+    border-top-color: var(--text-golden);
+}
+
+.quotestyle {
+    color: var(--text-alice);
+}

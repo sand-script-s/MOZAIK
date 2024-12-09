@@ -95,6 +95,6 @@ $(document).ready(function(){
 
     openSubMenu('invitationpage', 0); // Opens the first sub-menu on the homepage
     openSubMenu('returnpage', 0);
-    openSubMenu('setpage', 0);
+    openSubMenu('sunsetpage', 0);
 
 })

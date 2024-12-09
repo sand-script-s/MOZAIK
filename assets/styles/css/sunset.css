@@ -1,10 +1,10 @@
 :root {
     --text-golden: rgb(241, 192, 66);
-    --text-alice:rgb(26, 9, 121);
+    --text-scifi:rgb(26, 9, 121);
 }
 
-#setpage {
-    background-image: url(../../images/set/twig.jpg);
+#sunsetpage {
+    background-image: url(../../images/sunset/twig.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -24,15 +24,15 @@
 }
 
 .underline-return-main {
-    width: 55px;
+    width: 95px;
     border-top-color: var(--text-golden);
 }
 
 .underline-return-second {
-    width: 35px;
+    width: 60px;
     border-top-color: var(--text-golden);
 }
 
 .quotestyle {
-    color: var(--text-alice);
+    color: var(--text-scifi);
 }

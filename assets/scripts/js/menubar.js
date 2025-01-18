@@ -98,6 +98,6 @@ $(document).ready(function(){
     openSubMenu('sunsetpage', 0);
     openSubMenu('tangentialpage', 0);
     openSubMenu('podpage', 0);
-    openSubMenu('windwardspage', 0);
+    openSubMenu('windsweptpage', 0);
 
 })

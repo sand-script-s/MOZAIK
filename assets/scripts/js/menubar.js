@@ -99,5 +99,6 @@ $(document).ready(function(){
     openSubMenu('tangentialpage', 0);
     openSubMenu('podpage', 0);
     openSubMenu('windsweptpage', 0);
+    openSubMenu('echopage', 0);
 
 })

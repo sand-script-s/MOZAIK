@@ -118,6 +118,12 @@ body {
     margin: 2%;
 }
 
+.quotestyle-smaller {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    margin: 2%;
+}
+
 /* ------------------------- Media Queries ------------------------- */
 
 /* Phone */

@@ -1,8 +1,9 @@
 :root {
     --text-golden: rgb(233, 172, 18);
+    --text-glow: rgb(220, 215, 118);
 }
 
-#returnpage {
+#return-page {
     background-image: url(../../images/return/sand.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -10,24 +11,16 @@
     background-size: cover;
 }
 
-#inner-return {
-    /* Glass effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
-    background-color: #79797938; /*#38607e60; for a dark mode?*/
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
 .collage-header {
-    color: var(--text-golden);
+    color: var(--text-glow);
 }
 
-.underline-return-main {
-    width: 90px;
-    border-top-color: var(--text-golden);
+.underline-main {
+    border-top-color: var(--text-glow);
+    width: 28%;
 }
 
-.underline-return-second {
-    width: 55px;
-    border-top-color: var(--text-golden);
+.underline-second {
+    border-top-color: var(--text-glow);
+    width: 18%;
 }

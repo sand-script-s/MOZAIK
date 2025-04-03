@@ -93,12 +93,13 @@ $(document).ready(function(){
         }
     } 
 
-    openSubMenu('invitationpage', 0); // Opens the first sub-menu on the homepage
-    openSubMenu('returnpage', 0);
-    openSubMenu('sunsetpage', 0);
-    openSubMenu('tangentialpage', 0);
-    openSubMenu('podpage', 0);
-    openSubMenu('windsweptpage', 0);
-    openSubMenu('echopage', 0);
+    openSubMenu('invitation-page', 0); // Opens the first sub-menu on the homepage
+    openSubMenu('return-page', 0);
+    openSubMenu('sunset-page', 0);
+    openSubMenu('tangential-page', 0);
+    openSubMenu('pebble-page', 0);
+    openSubMenu('windswept-page', 0);
+    openSubMenu('echo-page', 0);
+    openSubMenu('grass-page', 0);
 
 })

@@ -1,9 +1,9 @@
 :root {
     --text-golden: rgb(241, 192, 66);
-    --text-scifi:rgb(26, 9, 121);
+    --text-alice:aliceblue;
 }
 
-#sunsetpage {
+#sunset-page {
     background-image: url(../../images/sunset/twig.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,28 +11,20 @@
     background-size: cover;
 }
 
-#inner-return {
-    /* Glass effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
-    background-color: #79797938; /*#38607e60; for a dark mode?*/
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
 .collage-header {
     color: var(--text-golden);
 }
 
-.underline-return-main {
-    width: 95px;
+.underline-main {
     border-top-color: var(--text-golden);
+    width: 29%;
 }
 
-.underline-return-second {
-    width: 60px;
+.underline-second {
     border-top-color: var(--text-golden);
+    width: 20%;
 }
 
 .quotestyle {
-    color: var(--text-scifi);
+    color: var(--text-alice);
 }

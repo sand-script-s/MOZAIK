@@ -1,0 +1,35 @@
+:root {
+    --text-illuminate:rgb(196, 83, 196);
+    --text-tangerine:rgb(232, 119, 82);
+}
+
+#pebble-page {
+    background-image: url(../../images/pebble/grass.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.collage-header {
+    color: var(--text-tangerine);
+}
+
+.underline-main {
+    border-top-color: var(--text-tangerine);
+    width: 29%;
+}
+
+.underline-second {
+    border-top-color: var(--text-tangerine);
+    width: 20%;
+}
+
+.quotestyle {
+    color: var(--text-illuminate);
+}
+
+.quotestyle-smaller {
+    color: var(--text-illuminate);
+}
+

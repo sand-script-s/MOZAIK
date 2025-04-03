@@ -1,3 +1,7 @@
+:root {
+    --filmreel: #043041ed;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,91 +14,94 @@ body {
     z-index: 1;
 }
 
-.container {
+.background-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
     height: 100%;
 }
 
-.center-column {
+.bg-center-column {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-direction:row;
 }
 
-.flexratio-container {
-    aspect-ratio: 9 / 16;
+.ratio-container {
     height: 100vh;
     height: 100lvh;
+    aspect-ratio: 9 / 16;
 }
 
-.flex-inner-down {
-    width: 100%;
+.main-down-flex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    container-type: inline-size;
+}
+
+.film-grid {
+    display: grid;
+    grid-template-columns: 9.5% auto 9.5%;
+    gap: 0;
+}
+
+.film-perforations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.filmreel-strip {
+    fill: var(--filmreel);
+}
+
+.film-middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: var(--filmreel);
+    backdrop-filter: blur(1px);
+}
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .collage-header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.9em;
+    font-size: 6.9cqi; /* basically the same as cqw - container width */
     font-weight: 600;
     text-align: center;
-    padding-top: 23px;
-    padding-bottom: 2px;
-}
-
-.underblock {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 25px;
+    padding-bottom: 0.4cqi;
 }
 
 .underline-outercontainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 5px;
+    padding-bottom: 1.2cqi;
 }
 
 .underline-style {
-    border-top-width: 2px;
+    border-top-width: 0.5cqi;
     border-top-style: solid;
 }
 
-.flex-inner {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start; /* Align items to the top */ 
-}
-
-.container-rightsection {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Padding is added automatically during the getratios.js sequence
 .post {
     padding-bottom: 6px;
-
-}
-
-.breath {
-    padding-top: 1em;
-}
-
-.ytvids {
-    width: 90%;
-}
-
-.ytvids.marg10 { /* Use this if you want to move a video to the right. */
-    margin-left: 10%;
-}
+} */
 
 .imgleft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgleft a {
     display: flex;
     justify-content: flex-start;
 }
@@ -104,23 +111,34 @@ body {
     justify-content: flex-end;
 }
 
-.space-r7 {
-    padding-right: 7%;
+.marker {
+    flex-wrap: wrap;
 }
 
-.space-r10 {
-    padding-right: 10%;
+.marker a {
+    display: flex;
+    width: 100%;
+}
+
+.marker a img {
+    object-fit: cover;
 }
 
 .quotestyle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: 3.7cqi;
     margin: 2%;
 }
 
 .quotestyle-smaller {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9em;
+    font-size: 3.5cqi;
+    margin: 2%;
+}
+
+.quotestyle-smallest {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.45cqi;
     margin: 2%;
 }
 
@@ -130,7 +148,7 @@ body {
 
 @media (max-width: 600px) {
 
-    .flexratio-container {
+    .ratio-container {
         aspect-ratio: 9 / 19;
     }
 

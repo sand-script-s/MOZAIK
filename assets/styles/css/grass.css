@@ -1,0 +1,30 @@
+:root {
+    --text-lime: rgb(151, 203, 27);
+    --text-lightsky:rgb(185, 208, 225);
+}
+
+#grass-page {
+    background-image: url(../../images/grass/seed.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.collage-header {
+    color: var(--text-lime);
+}
+
+.underline-main {
+    border-top-color: var(--text-lime);
+    width: 22%;
+}
+
+.underline-second {
+    border-top-color: var(--text-lime);
+    width: 15%;
+}
+
+.quotestyle-smallest {
+    color: var(--text-lightsky);
+}

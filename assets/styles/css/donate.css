@@ -12,12 +12,20 @@
     flex-grow: 1;
 }
 
+#alms-bowl {
+    width: 21%;
+}
+
 /* ------------------------- Media Queries ------------------------- */
 
 @media (max-width: 880px) {
 
     .paypal-wrapper {
         width: 370px;
+    }
+
+    #alms-bowl {
+        width: 37%;
     }
 
 }
@@ -28,5 +36,8 @@
         width: 260px;
     }
 
+    #alms-bowl {
+        width: 47%;
+    }
 
 }

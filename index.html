@@ -11,6 +11,7 @@
     <meta name="description" content="These are digital collage filmstrips exploring free association, coincidence and meaning.">
     <meta name="keywords" content="collage, filmstrip, coincidence, synchronicity, digital collage">
     <meta name="author" content="sand.script.s">
+    <meta name="collage" content="Invitation">
 
     <meta property="og:title" content="MOZAIK - Collages ~ Invitation">
     <meta name="og:type" content="website">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="assets/styles/css/main-collages.css">
     <link rel="stylesheet" href="assets/styles/css/menubar.css">
     <link rel="stylesheet" href="assets/styles/css/invitation.css">
+    <link rel="stylesheet" href="assets/styles/css/invitation-ratios.css">
 
     <script src="assets/scripts/js/libs/jquery-3.7.1.min.js" charset="utf-8"></script>
     
@@ -29,7 +31,7 @@
     <script src="assets/scripts/js/libs/lite-yt-embed.js"></script>
 
 </head>
-<body id="invitationpage">
+<body id="invitation-page">
 
     <label class="fixedpos">
         <div id="hamburgerdiv" class="toggle-hamburger">
@@ -49,9 +51,10 @@
                         <a href="./pages/return.html" class="sub-item"><div class="inner-wrapper unselectable">~ Return</div></a>
                         <a href="./pages/sunset.html" class="sub-item"><div class="inner-wrapper unselectable">~ Sunset</div></a>
                         <a href="./pages/tangential.html" class="sub-item"><div class="inner-wrapper unselectable">~ Tangential</div></a>
-                        <a href="./pages/pod.html" class="sub-item"><div class="inner-wrapper unselectable">~ Pod</div></a>
+                        <a href="./pages/pebble.html" class="sub-item"><div class="inner-wrapper unselectable">~ Pebble</div></a>
                         <a href="./pages/windswept.html" class="sub-item"><div class="inner-wrapper unselectable">~ Windswept</div></a>
                         <a href="./pages/echo.html" class="sub-item"><div class="inner-wrapper unselectable">~ Echo</div></a>
+                        <a href="./pages/grass.html" class="sub-item"><div class="inner-wrapper unselectable">~ Grass</div></a>
                     </div>
                 </div>
                 <div class="menu-item"><a href="./pages/about.html"><div class="inner-wrapper unselectable">About</div></a></div>
@@ -62,284 +65,417 @@
     </label>
 
     <div class="fullspan">
-        <div class="container">
-            <div class="left-column"></div>
-            <div class="center-column">
-                <div class="flexratio-container">
-                    <div class="flex-inner-down" id="inner-invitation">
-                        <div class="collage-header">~ Invitation ~</div>
-                        <div class="underblock">
-                            <div class="underline-outercontainer"><div class="underline-style underline-invitation-main"></div></div>
-                            <div class="underline-outercontainer"><div class="underline-style underline-invitation-second"></div></div>
-                        </div>
-                        <div class="flex-inner">
-                            <div class="container-rightsection">
- 
-                                <div class="post">
-                                        <div class="imgright">          
-                                                <img class="space-r10" width="76%" src="https://i.ibb.co/X38Xksk/Stairway.jpg">
-                                        </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">   
-                                        <lite-youtube videoid="0vpSpt7Seog" playlabel="Noah Cyrus - I Burned LA Down (Official Video)"></lite-youtube>
-                                    </div>      
-                                </div>
+        <div class="background-grid">
+            <div class="bg-left-column"></div>
+            <div class="bg-center-column">
+                <div class="ratio-container">
+                    <div class="main-down-flex">
+                        <div class="film-grid">
+
+                            <div id="filmstrip-left-perforations" class="film-perforations">               
+                                <svg class="filmstrip-SVG" viewBox="0 0 48.0833 13055.1337" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <!-- This pattern duplicates the hole shape downward -->
+                                        <pattern id="filmstrip-pattern-left" class="filmstrip-pattern" width="48.0833" height="39.3229" patternUnits="userSpaceOnUse">
+                                            <!-- This rectangle defines the shape of the holes-->
+                                            <rect id="filmstrip-holeshape-left" class="filmstrip-hole" x="14.5404" y="8.2578" width="22.1183" height="15.7292" rx="3.9323" ry="3.9323" fill="black" />
+                                        </pattern>
                                 
-                                <div class="post">
-                                    <div class="ytvids">   
-                                        <lite-youtube videoid="Tv9YoYCKNoE" playlabel="Grimes - Flesh without Blood/Life in the Vivid Dream"></lite-youtube>
-                                    </div>
-                                </div>
+                                        <!-- Define the mask using the pattern -->
+                                        <mask id="filmstrip-mask-left">
+                                            <!-- The svg will be visible wherever this rectangle remains white -->
+                                            <rect x="-10%" y="-2%" width="120%" height="104%" fill="white" />
+                                            <!-- Use the pattern to put the black hole shapes over the white rectangle -->
+                                            <rect x="0" y="0" width="100%" height="100%" fill="url(#filmstrip-pattern-left)" />
+                                        </mask>
+
+                                        <!-- Define the blur filter -->
+                                        <filter id="filmstrip-blurfilter-left" x="-10%" y="-2%" width="120%" height="104%">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                                        </filter>
+
+                                    </defs>
                                 
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="7R1N-8SoqcM" playlabel="Marshmello x Lil Peep - Spotlight (Official Music Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="LL7f-w6WNw4" playlabel="Allie X - Weird World (Official Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="Iczqotmm5sk" playlabel="Flume feat. MAY-A - Say Nothing (Official Music Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="EiNEFwnI_lg" playlabel="Turn My Heart to Stone"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="imgleft">          
-                                            <img width="90%" loading="lazy" src="https://i.ibb.co/zRQZHQ8/Flutter.jpg">
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="imgright">          
-                                            <img class="space-r10" width="80%" loading="lazy" src="https://i.ibb.co/SNbJfcN/Bulb.jpg">
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="LnnyQcRbwEI" playlabel="deadmau5 - Polaris"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="b4Bj7Zb-YD4" playlabel="Calvin Harris - My Way (Official Video)"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="P5iBlwXp4lk" playlabel="Meg Myers - Jealous Sea [Official Music Video]"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="AxQEZIDws7Y" playlabel="There Will Be Blood - Drilling Rig Trouble-Fire Scene"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="kSikdqib-gk" playlabel="Ariana Grande - Into You (Audio)"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="HGH-4jQZRcc" playlabel="Florence + The Machine - No Light, No Light"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="a9cyG_yfh1k" playlabel="Dua Lipa - Illusion (Official Music Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="KUmZp8pR1uc" playlabel="Amy Winehouse - Rehab"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="Fp_P_e1cPOE" playlabel="Camila Cabello - Shameless (Official Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="c2vm-QjK2xQ" playlabel="Warcraft III Intro"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="imgleft">          
-                                            <img width="90%" src="https://i.ibb.co/6YbHp8k/Toffee.jpg">
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                        <div class="ytvids">
-                                                <lite-youtube videoid="ghb6eDopW8I" playlabel="Of Monsters and Men - Little Talks"></lite-youtube>    
-                                        </div> 
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="Of_jyeDZ3Sg" playlabel="Gladiator Movie Clip - Are you not Entertained?"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="QTIwfN-4hZ4" playlabel="JERUZALEM - Official Trailer (UNRATED)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="0FSwsrFpkbw" playlabel="From the World of John Wick: Ballerina (2025) Official Trailer - Ana de Armas"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="WcIcVapfqXw" playlabel="Rema, Selena Gomez - Calm Down (Official Music Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="lu9IQHxsrDU" playlabel="Bob Dylan - Rainy Day Women #12 & 35 (Live at Farm Aid 1986)"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="Pzy_KOBddRA" playlabel="The First Transistors"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="OYTbG1cVvfY" playlabel="Don Cheadle Encounters Sad Adam Sandler | Reign Over Me (2007) | Now Playing"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="ffxKSjUwKdU" playlabel="Ariana Grande - no tears left to cry (Official Video)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="imgleft">          
-                                            <img width="90%" loading="lazy" src="https://i.ibb.co/gd1mqVK/Anime-Girl-Airoplanes.gif">
-                                    </div>
-                                    <blockquote class="quotestyle">
-                                        Come join us!
-                                    </blockquote>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="ZW9_CrOaGo4" playlabel=" CGI Animated Horror Short Film: 'Gracey Manor' by Chris Gallagher | CGMeetup "></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="Zg2IcEHWXWo" playlabel="MGMT - Cool Song No. 2 (Video)"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="6PyLBc0bNDg" playlabel="Brooke Candy - A Study in Duality"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="cvu28pKql8g" playlabel="Hits Medley: It's All Coming Back To Me Now / Because You Loved Me / To Love You More"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="ZqiNs6tui-o" playlabel="Allie X – Love Me Wrong ft. Troye Sivan (Visualizer)"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="GuFLJWJ0_2I" playlabel="Elliphant - North Star (Bloody Christmas) [Official Video]"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="UQfRdl3GTw4" playlabel="Plato - The Allegory of the Cave - (The Matrix) Animated"></lite-youtube>   
-                                    </div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="ytvids">
-                                        <lite-youtube videoid="TLzhlsEFcVQ" playlabel="World of Warcraft: Warlords of Draenor Cinematic"></lite-youtube>   
-                                    </div>
-                                </div>
-                    
-                                <div class="post">
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>
-                                    <div class="breath"></div>               
-                                </div>
-                    
+                                    <!-- Apply the mask to the blue rectangle along with the blur filter, this delivers the final visible svg element one sees -->
+                                    <rect class="filmreel-strip" x="-10%" y="-2%" width="120%" height="104%" fill="blue" mask="url(#filmstrip-mask-left)" filter="url(#filmstrip-blurfilter-left)" />
+                                </svg>
                             </div>
-                        </div>
+
+                            <div class="film-middle-content">
+
+                                <div class="snug-middle-content">
+
+                                    <!-- 'fitted' refers to elements that get ratios added to their CSS via the getratios.js script -->
+                                    <div class="header-block fitted addspacing-2">
+                                        <div class="header-content">
+                                            <div class="collage-header">~ Invitation ~</div>
+                                            <div class="underline-block">
+                                                <div class="underline-outercontainer"><div class="underline-style underline-main"></div></div>
+                                                <div class="underline-outercontainer"><div class="underline-style underline-second"></div></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="content-down-flex">
+            
+                                        <div class="post fitted" id="post_1">
+                                            <div class="post-content">
+                                                <div class="imgright">   
+                                                    <img width="85%" src="https://i.ibb.co/X38Xksk/Stairway.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- 'ytstandard' refers to a post containing a single YouTube video with no added spacing-->
+                                        <div class="post ytstandard fitted" id="post_2">
+                                            <div class="post-content">
+                                                <div class="ytvids">   
+                                                    <lite-youtube videoid="0vpSpt7Seog" playlabel="Noah Cyrus - I Burned LA Down (Official Video)"></lite-youtube>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="post ytstandard fitted" id="post_3">
+                                            <div class="post-content">
+                                                <div class="ytvids">   
+                                                    <lite-youtube videoid="Tv9YoYCKNoE" playlabel="Grimes - Flesh without Blood/Life in the Vivid Dream"></lite-youtube>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="post ytstandard fitted" id="post_4">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="7R1N-8SoqcM" playlabel="Marshmello x Lil Peep - Spotlight (Official Music Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_5">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="LL7f-w6WNw4" playlabel="Allie X - Weird World (Official Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_6">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="Iczqotmm5sk" playlabel="Flume feat. MAY-A - Say Nothing (Official Music Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_7">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="EiNEFwnI_lg" playlabel="Turn My Heart to Stone"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted" id="post_8">
+                                            <div class="post-content">
+                                                <div class="imgleft">          
+                                                    <img width="100%" loading="lazy" src="https://i.ibb.co/zRQZHQ8/Flutter.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted" id="post_9">
+                                            <div class="post-content">
+                                                <div class="imgright">          
+                                                    <img width="90%" loading="lazy" src="https://i.ibb.co/SNbJfcN/Bulb.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_10">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="LnnyQcRbwEI" playlabel="deadmau5 - Polaris"></lite-youtube>   
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_11">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="b4Bj7Zb-YD4" playlabel="Calvin Harris - My Way (Official Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_12">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="P5iBlwXp4lk" playlabel="Meg Myers - Jealous Sea [Official Music Video]"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_13">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="AxQEZIDws7Y" playlabel="There Will Be Blood - Drilling Rig Trouble-Fire Scene"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_14">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="kSikdqib-gk" playlabel="Ariana Grande - Into You (Audio)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_15">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="HGH-4jQZRcc" playlabel="Florence + The Machine - No Light, No Light"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_16">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="a9cyG_yfh1k" playlabel="Dua Lipa - Illusion (Official Music Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_17">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="KUmZp8pR1uc" playlabel="Amy Winehouse - Rehab"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_18">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="Fp_P_e1cPOE" playlabel="Camila Cabello - Shameless (Official Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_19">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="c2vm-QjK2xQ" playlabel="Warcraft III Intro"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted" id="post_20">
+                                            <div class="post-content">
+                                                <div class="imgleft">          
+                                                    <img width="100%" loading="lazy" src="https://i.ibb.co/6YbHp8k/Toffee.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_21">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="ghb6eDopW8I" playlabel="Of Monsters and Men - Little Talks"></lite-youtube>    
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_22">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="Of_jyeDZ3Sg" playlabel="Gladiator Movie Clip - Are you not Entertained?"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_23">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="QTIwfN-4hZ4" playlabel="JERUZALEM - Official Trailer (UNRATED)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_24">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="0FSwsrFpkbw" playlabel="From the World of John Wick: Ballerina (2025) Official Trailer - Ana de Armas"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                            
+                                        <div class="post ytstandard fitted" id="post_25">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="WcIcVapfqXw" playlabel="Rema, Selena Gomez - Calm Down (Official Music Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_26">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="lu9IQHxsrDU" playlabel="Bob Dylan - Rainy Day Women #12 & 35 (Live at Farm Aid 1986)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_27">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="Pzy_KOBddRA" playlabel="The First Transistors"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_28">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="OYTbG1cVvfY" playlabel="Don Cheadle Encounters Sad Adam Sandler | Reign Over Me (2007) | Now Playing"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_29">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="ffxKSjUwKdU" playlabel="Ariana Grande - no tears left to cry (Official Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted" id="post_30">
+                                            <div class="post-content">
+                                                <div class="imgleft">          
+                                                    <img width="100%" loading="lazy" src="https://i.ibb.co/gd1mqVK/Anime-Girl-Airoplanes.gif">
+                                                </div>
+                                                <blockquote class="quotestyle">
+                                                    Come join us!
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_31">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="ZW9_CrOaGo4" playlabel=" CGI Animated Horror Short Film: 'Gracey Manor' by Chris Gallagher | CGMeetup "></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_32">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="Zg2IcEHWXWo" playlabel="MGMT - Cool Song No. 2 (Video)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_33">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="6PyLBc0bNDg" playlabel="Brooke Candy - A Study in Duality"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_34">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="cvu28pKql8g" playlabel="Hits Medley: It's All Coming Back To Me Now / Because You Loved Me / To Love You More"></lite-youtube>   
+                                                </div>
+                                            </div>                                       
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_35">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="ZqiNs6tui-o" playlabel="Allie X – Love Me Wrong ft. Troye Sivan (Visualizer)"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_36">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="GuFLJWJ0_2I" playlabel="Elliphant - North Star (Bloody Christmas) [Official Video]"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_37">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="UQfRdl3GTw4" playlabel="Plato - The Allegory of the Cave - (The Matrix) Animated"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post ytstandard fitted" id="post_38">
+                                            <div class="post-content">
+                                                <div class="ytvids">
+                                                    <lite-youtube videoid="TLzhlsEFcVQ" playlabel="World of Warcraft: Warlords of Draenor Cinematic"></lite-youtube>   
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="post fitted addspacing-1" id="post_39">
+                                            <div class="post-content"></div>               
+                                        </div>                                                          
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="film-right-perforations" class="film-perforations">
+                                <svg class="filmstrip-SVG" viewBox="0 0 48.0833 13055.1337" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <!-- This pattern duplicates the hole shape downward -->
+                                        <pattern id="filmstrip-pattern-right" class="filmstrip-pattern" width="48.0833" height="39.3229" patternUnits="userSpaceOnUse">
+                                            <!-- This rectangle defines the shape of the holes-->
+                                            <rect id="filmstrip-holeshape-right" class="filmstrip-hole" x="11.4246" y="8.2578" width="22.1183" height="15.7292" rx="3.9323" ry="3.9323" fill="black" />
+                                        </pattern>
+                                
+                                        <!-- Define the mask using the pattern -->
+                                        <mask id="filmstrip-mask-right">
+                                            <!-- The svg will be visible wherever this rectangle remains white -->
+                                            <rect x="-10%" y="-2%" width="120%" height="104%" fill="white" />
+                                            <!-- Use the pattern to put the black hole shapes over the white rectangle -->
+                                            <rect x="0" y="0" width="100%" height="100%" fill="url(#filmstrip-pattern-right)" />
+                                        </mask>
+
+                                        <!-- Define the blur filter -->
+                                        <filter id="filmstrip-blurfilter-right" x="-10%" y="-2%" width="120%" height="104%">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                                        </filter>
+
+                                    </defs>
+                                
+                                    <!-- Apply the mask to the blue rectangle along with the blur filter, this delivers the final visible svg element one sees -->
+                                    <rect class="filmreel-strip" x="-10%" y="-2%" width="120%" height="104%" fill="blue" mask="url(#filmstrip-mask-right)" filter="url(#filmstrip-blurfilter-right)" />
+                                </svg>                       
+                            </div>
+
+                        </div>                       
                     </div>
                 </div>
             </div>
-            <div class="right-column"></div>
+            <div class="bg-right-column"></div>
         </div>
     </div>
 
     <script src="assets/scripts/js/menubar.js"></script>
+    <script src="assets/scripts/js/reposition-svgs.js"></script>
 
 </body>
+
 </html>

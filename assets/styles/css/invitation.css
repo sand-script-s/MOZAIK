@@ -1,9 +1,9 @@
 :root {
-    --text-golden: rgb(233, 172, 18);
+    --text-firegolden: rgb(233, 172, 18);
     --text-alice:aliceblue;
 }
 
-#invitationpage {
+#invitation-page {
     background-image: url(../../images/invitation/wall.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,26 +11,18 @@
     background-size: cover;
 }
 
-#inner-invitation {
-    /* Glass effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
-    background-color: #1d566b51; /*#38607e60; for a dark mode?*/
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
 .collage-header {
-    color: var(--text-golden);
+    color: var(--text-firegolden);
 }
 
-.underline-invitation-main {
-    border-top-color: var(--text-golden);
-    width: 144px;
+.underline-main {
+    border-top-color: var(--text-firegolden);
+    width: 41%;
 }
 
-.underline-invitation-second {
-    border-top-color: var(--text-golden);
-    width: 110px;
+.underline-second {
+    border-top-color: var(--text-firegolden);
+    width: 31%;
 }
 
 .quotestyle {

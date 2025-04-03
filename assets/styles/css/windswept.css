@@ -1,13 +1,8 @@
 :root {
-    --text-golden: rgb(241, 192, 66);
-    --text-luminescent: rgb(106, 39, 148);
-    --text-scifi:rgb(26, 9, 121);
-    --text-rose:rgb(113, 6, 68);
-    --text-illuminate:rgb(113, 6, 113);
     --text-moss: rgb(51, 179, 117);
 }
 
-#windsweptpage {
+#windswept-page {
     background-image: url(../../images/windward/logroom.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -15,28 +10,16 @@
     background-size: cover;
 }
 
-#inner-return {
-    /* Glass effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
-    background-color: #79797938; /*#38607e60; for a dark mode?*/
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
 .collage-header {
     color: var(--text-moss);
 }
 
-.underline-return-main {
-    width: 155px;
+.underline-main {
     border-top-color: var(--text-moss);
+    width: 43%;
 }
 
-.underline-return-second {
-    width: 130px;
+.underline-second {
     border-top-color: var(--text-moss);
-}
-
-.quotestyle {
-    color: var(--text-illuminate);
+    width: 32%;
 }

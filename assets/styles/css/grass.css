@@ -6,7 +6,6 @@
 #grass-page {
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .background-image {

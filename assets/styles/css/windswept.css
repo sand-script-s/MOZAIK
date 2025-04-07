@@ -3,11 +3,17 @@
 }
 
 #windswept-page {
+    min-height: 100vh;
+    min-height: 100lvh;
+}
+
+.background-image {
     background-image: url(../../images/windward/logroom.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100%;
+    min-height: 100vh;
+    min-height: 100lvh;
 }
 
 .collage-header {

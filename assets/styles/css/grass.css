@@ -3,11 +3,12 @@
     --text-lightsky:rgb(185, 208, 225);
 }
 
-#grass-page {
+#grass-background {
+    min-height: 100vh;
+    min-height: 100lvh;
     background-image: url(../../images/grass/seed.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 

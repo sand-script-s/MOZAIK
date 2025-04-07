@@ -2,11 +2,12 @@
     --text-luminescent: rgb(182, 125, 217);
 }
 
-#tangential-page {
+#tangential-background {
+    min-height: 100vh;
+    min-height: 100lvh;
     background-image: url(../../images/tangential/webdew.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 

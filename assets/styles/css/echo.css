@@ -4,11 +4,12 @@
     --text-chrome:rgb(147, 159, 167);
 }
 
-#echo-page {
+#echo-background {
+    min-height: 100vh;
+    min-height: 100lvh;
     background-image: url(../../images/echo/light.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 

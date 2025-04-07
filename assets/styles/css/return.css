@@ -3,11 +3,12 @@
     --text-glow: rgb(220, 215, 118);
 }
 
-#return-page {
+#return-background {
+    min-height: 100vh;
+    min-height: 100lvh;
     background-image: url(../../images/return/sand.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 

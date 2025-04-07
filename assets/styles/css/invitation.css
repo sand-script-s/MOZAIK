@@ -3,11 +3,12 @@
     --text-alice:aliceblue;
 }
 
-#invitation-page {
+#invitation-background {
+    min-height: 100vh;
+    min-height: 100lvh;
     background-image: url(../../images/invitation/wall.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 

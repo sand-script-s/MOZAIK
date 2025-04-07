@@ -8,7 +8,9 @@
 }
 
 .background-image {
-    /*position: fixed;*/
+    min-height: 100vh;
+    min-height: 100lvh;
+    min-width: 100%;
     background-image: url(../../images/windward/logroom.jpg);
     background-repeat: no-repeat;
     background-position: center;

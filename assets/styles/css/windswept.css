@@ -2,20 +2,29 @@
     --text-moss: rgb(51, 179, 117);
 }
 
-#windswept-page {
+body {
     min-height: 100vh;
     min-height: 100lvh;
 }
 
-.background-image {
-    min-height: 100vh;
-    min-height: 100lvh;
-    min-width: 100%;
+.background-container {
+    position: fixed;
+    height: 100vh;
+    height: 100lvh;
+    width: 100%;
+}
+
+.background-imagediv {
+    min-height: 100%;
     background-image: url(../../images/windward/logroom.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: auto 100vh;
+    background-size: cover;
+}
+
+.film-grid {
+    z-index: 2;
 }
 
 .collage-header {

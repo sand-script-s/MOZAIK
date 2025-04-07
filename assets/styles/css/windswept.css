@@ -8,6 +8,9 @@
 }
 
 .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-image: url(../../images/windward/logroom.jpg);
     background-repeat: no-repeat;
     background-position: center;

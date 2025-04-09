@@ -23,15 +23,10 @@
     function runThrough() {
 
         const sidestripWidth = getSidestripWidth();
-        console.log('Phase 1 End - sidestripWidth: ' + sidestripWidth);
         const filmstripHeight = getFilmstripHeight();
-        console.log('Phase 2 End - filmstripHeight: ' + filmstripHeight);
         const ytStdDims = getStandardYTSize();
-        console.log('Phase 3 End - ytStdDims: ' + ytStdDims);
         const unitHeight = calcUnit(ytStdDims);
-        console.log('Phase 4 End - unitHeight: ' + unitHeight);
         const svgPropsArray = determineSVGProperties(sidestripWidth, filmstripHeight, unitHeight);
-        console.log('Phase 5 End - svgPropsArray: ' + svgPropsArray);
         changeSVGProperties(svgPropsArray);
 
     }

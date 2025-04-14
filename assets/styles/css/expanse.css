@@ -1,0 +1,31 @@
+:root {
+    --text-foliage: rgb(53, 178, 97);
+    --text-shallow-aqua:rgb(57, 155, 174);
+}
+
+#expanse-background {
+    min-height: 100vh;
+    min-height: 100lvh;
+    background-image: url(../../images/expanse/omni.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.collage-header {
+    color: var(--text-foliage);
+}
+
+.underline-main {
+    border-top-color: var(--text-foliage);
+    width: 35%;
+}
+
+.underline-second {
+    border-top-color: var(--text-foliage);
+    width: 27%;
+}
+
+.quotestyle {
+    color: var(--text-shallow-aqua);
+}

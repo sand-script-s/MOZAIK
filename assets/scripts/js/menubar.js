@@ -101,5 +101,6 @@ $(document).ready(function(){
     openSubMenu('windswept-page', 0);
     openSubMenu('echo-page', 0);
     openSubMenu('grass-page', 0);
+    openSubMenu('expanse-page', 0);
 
 })

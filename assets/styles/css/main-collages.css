@@ -125,6 +125,11 @@ body {
     justify-content: flex-end;
 }
 
+.imgcenter {
+    display: flex;
+    justify-content: center;
+}
+
 .marker {
     flex-wrap: wrap;
 }

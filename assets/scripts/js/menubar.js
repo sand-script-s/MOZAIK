@@ -102,5 +102,6 @@ $(document).ready(function(){
     openSubMenu('echo-page', 0);
     openSubMenu('grass-page', 0);
     openSubMenu('expanse-page', 0);
+    openSubMenu('vapid-page', 0);
 
 })

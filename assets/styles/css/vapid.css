@@ -1,0 +1,26 @@
+:root {
+    --text-icebreaker: rgb(175, 199, 220);
+}
+
+#vapid-background {
+    min-height: 100vh;
+    min-height: 100lvh;
+    background-image: url(../../images/vapid/coal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.collage-header {
+    color: var(--text-icebreaker);
+}
+
+.underline-main {
+    border-top-color: var(--text-icebreaker);
+    width: 23%;
+}
+
+.underline-second {
+    border-top-color: var(--text-icebreaker);
+    width: 17%;
+}

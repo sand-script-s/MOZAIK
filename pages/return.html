@@ -56,6 +56,7 @@
                         <a href="./echo.html" class="sub-item"><div class="inner-wrapper unselectable">~ Echo</div></a>
                         <a href="./grass.html" class="sub-item"><div class="inner-wrapper unselectable">~ Grass</div></a>
                         <a href="./expanse.html" class="sub-item"><div class="inner-wrapper unselectable">~ Expanse</div></a>
+                        <a href="./vapid.html" class="sub-item"><div class="inner-wrapper unselectable">~ Vapid</div></a>
                     </div>
                 </div>
                 <div class="menu-item"><a href="./about.html"><div class="inner-wrapper unselectable">About</div></a></div>
@@ -76,7 +77,9 @@
                     <div class="main-down-flex">
                         <div class="film-grid">
 
-                            <div id="filmstrip-left-perforations" class="film-perforations">               
+                            <div id="filmstrip-left-perforations" class="film-perforations">
+                                
+                                <!-- This SVG creates the perforated filmstrip along the left side of the main content box -->
                                 <svg class="filmstrip-SVG" viewBox="0 0 48.0833 22879.7" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <!-- This pattern duplicates the hole shape downward -->
@@ -89,7 +92,7 @@
                                         <mask id="filmstrip-mask-left">
                                             <!-- The svg will be visible wherever this rectangle remains white -->
                                             <rect x="-10%" y="-2%" width="120%" height="104%" fill="white" />
-                                            <!-- Use the pattern to put the black hole shapes over the white rectangle -->
+                                            <!-- Use the pattern to put the black hole shapes over the white rectangle above-->
                                             <rect x="0" y="0" width="100%" height="100%" fill="url(#filmstrip-pattern-left)" />
                                         </mask>
 
@@ -97,12 +100,12 @@
                                         <filter id="filmstrip-blurfilter-left" x="-10%" y="-2%" width="120%" height="104%">
                                             <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
                                         </filter>
-
                                     </defs>
                                 
                                     <!-- Apply the mask to the blue rectangle along with the blur filter, this delivers the final visible svg element one sees -->
                                     <rect class="filmreel-strip" x="-10%" y="-2%" width="120%" height="104%" fill="blue" mask="url(#filmstrip-mask-left)" filter="url(#filmstrip-blurfilter-left)" />
-                                </svg>
+                                </svg>                     
+
                             </div>
 
                             <div class="film-middle-content">
@@ -669,6 +672,8 @@
                             </div>
 
                             <div id="film-right-perforations" class="film-perforations">
+
+                                <!-- This SVG creates the perforated filmstrip along the right side of the main content box -->
                                 <svg class="filmstrip-SVG" viewBox="0 0 48.0833 22879.7" xmlns="http://www.w3.org/2000/svg">                                    
                                     <defs>
                                         <!-- This pattern duplicates the hole shape downward -->
@@ -681,7 +686,7 @@
                                         <mask id="filmstrip-mask-right">
                                             <!-- The svg will be visible wherever this rectangle remains white -->
                                             <rect x="-10%" y="-2%" width="120%" height="104%" fill="white" />
-                                            <!-- Use the pattern to put the black hole shapes over the white rectangle -->
+                                            <!-- Use the pattern to put the black hole shapes over the white rectangle above-->
                                             <rect x="0" y="0" width="100%" height="100%" fill="url(#filmstrip-pattern-right)" />
                                         </mask>
 
@@ -689,7 +694,6 @@
                                         <filter id="filmstrip-blurfilter-right" x="-10%" y="-2%" width="120%" height="104%">
                                             <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
                                         </filter>
-
                                     </defs>
 
                                     <!--Apply the mask to the blue rectangle along with the blur filter, this delivers the final visible svg element one sees -->

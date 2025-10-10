@@ -106,33 +106,6 @@
                                     <rect class="filmreel-strip" x="-10%" y="-2%" width="120%" height="104%" fill="blue" mask="url(#filmstrip-mask-left)" filter="url(#filmstrip-blurfilter-left)" />
                                 </svg>
 
-                                <!-- This SVG creates the selection rectangles that appear in relation to the mouse position -->
-                                 <svg class="selector-SVG-left" top="0px" viewBox="0 0 48.0833 157.2916" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <!-- This pattern duplicates the selector rectangle shape downward -->
-                                        <pattern id="selector-pattern-left" class="selector-pattern" width="48.0833" height="39.3229" patternUnits="userSpaceOnUse">
-                                            <!-- This rectangle defines the shape of the selectors-->
-                                            <rect id="selector-shape-left" class="selector-shape" x="14.5404" y="8.2578" width="22.1183" height="15.7292" rx="3.9323" ry="3.9323" fill="white" />
-                                        </pattern>
-
-                                        <!-- Define the mask using the pattern -->
-                                        <mask id="selector-mask-left">
-                                            <!-- The svg will be visible wherever this black rectangle gets white put on -->
-                                            <rect x="-10%" y="-2%" width="120%" height="104%" fill="black" />
-                                            <!-- Use the pattern to put the white selector shapes over the black rectangle above-->
-                                            <rect x="0" y="0" width="100%" height="100%" fill="url(#selector-pattern-left)" />
-                                        </mask>
-          
-                                        <!-- Define the blur filter -->
-                                        <filter id="selector-blurfilter-left" x="-10%" y="-2%" width="120%" height="104%">
-                                            <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-                                        </filter>
-                                    </defs>
-                                
-                                    <!-- Apply the mask to the green rectangles along with the blur filter, this delivers the final selector element one sees -->
-                                    <rect class="selector-strip-left" x="-10%" y="-2%" width="120%" height="104%" fill="green" mask="url(#selector-mask-left)" filter="url(#selector-blurfilter-left)" />
-                                </svg>
-
                             </div>
 
                             <div class="film-middle-content">

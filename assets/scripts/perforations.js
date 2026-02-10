@@ -1,8 +1,15 @@
+/*
+This JavaScript handles the positioning of the perforated holes (SVGs) on the sides of the filmstrip as well as
+the selectors that will appear there in response to mouse movements, along with their functionality.
+*/
+
 const constUnitsPerPost = 8; //This constand defines how many units (filmreel holes) each standard YouTube section is divided into
 
-//Grab elements as constants
+//Grab document elements as constants
 const filmSideSection = document.querySelector('.film-perforations');
 const filmLongContentContainer = document.querySelector('.snug-middle-content');
+
+const contentContainer = document.querySelector('.content-down-flex');
 
 // Get the SVG elements
 const filmSVG = document.querySelectorAll('.filmstrip-SVG');
@@ -11,23 +18,65 @@ const patternSVG = document.querySelectorAll('.filmstrip-pattern');
 const svg_HoleShapeElement_Left = document.querySelector('#filmstrip-holeshape-left');
 const svg_HoleShapeElement_Right = document.querySelector('#filmstrip-holeshape-right');
 
+// This is a state object that keeps certain variables that have to be accessed 'globally' in this JavaScript
+class CentralState {
+
+    // Private fields (not directly accessible from outside)
+    #postPositionsMain = [];
+    #visiblePostPositionsMain = [];
+
+    // Getter and setter for postPositionsMain with validation
+    get postPositionsMain() {
+        return this.#postPositionsMain;
+    }
+
+    set postPositionsMain(valueArr) {
+        if (valueArr != []) {
+            this.#postPositionsMain = valueArr;
+        } else {
+            console.warn('Empty array for postPositionsMain');
+        }
+    }
+
+    // Getter and setter for visiblePostPositionsMain with validation
+    get visiblePostPositionsMain() {
+        return this.#visiblePostPositionsMain;
+    }
+    
+    set visiblePostPositionsMain(valueArr) {
+        if (valueArr.length !== 0) {
+            this.#visiblePostPositionsMain = valueArr;
+        } else {
+            console.warn('Empty array for visiblePostPositionsMain');
+        }
+    }
+
+}
 
 // Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', runThrough);
+document.addEventListener('DOMContentLoaded', measureNFit);
 
 // Add event listener for resize
-window.addEventListener('resize', runThrough);
+window.addEventListener('resize', measureNFit);
 
 
 // -----This is the main function that runs after the DOM has loaded, and also upon a window resize-----
-function runThrough() {
+function measureNFit() {
 
+    //This part gets all the necessary measurements and moves the perforation SVGs accordingly
     const sidestripWidth = getSidestripWidth();
     const filmstripHeight = getFilmstripHeight();
     const ytStdDims = getStandardYTSize();
     const unitHeight = calcUnit(ytStdDims);
     const svgPropsArray = determineSVGProperties(sidestripWidth, filmstripHeight, unitHeight);
     changeSVGProperties(svgPropsArray);
+
+    //This part gets the locations for all the posts, these are used to position the selector SVGs
+    const stateObject = new CentralState(); // A global object to store variables in that can be accessed across the script
+    stateObject.postPositionsMain = determinePostPositions(unitHeight);
+    var determineVisiblePostPositions = narrowPostPositions(stateObject.postPositionsMain);
+    
+    //Busy here
 
 }
 
@@ -72,7 +121,6 @@ function getStandardYTSize() {
         console.log('No Divs with the class ytstandard found.');
         return null; // Return null to indicate no div was found
     }
-
 }
 
 
@@ -81,7 +129,6 @@ function calcUnit(ytStandards) {
 
     const trackLength = ytStandards[1] / constUnitsPerPost; // divides the height of the standard div with the number of filmreel holes that will occupy the side of the div.
     return trackLength;
-
 }
 
 
@@ -108,7 +155,6 @@ function determineSVGProperties(sidestripMeasurement, filmstripContentLong, unit
     //const multipliedViewBoxHeight = mappedViewBoxHeight * numberOfTracks;
 
     return [viewportHeight, viewBoxWidth, viewBoxHeight, rectHeight, rectWidth, rectXStart_Left, rectXStart_Right, rectYStart, rectRY, rectRX];
-
 }
 
 
@@ -169,7 +215,79 @@ function changeSVGProperties(propertiesArray) {
     svg_HoleShapeElement_Right.setAttribute('ry', rectRY);
 
     return;
+}
 
+function determinePostPositions(unitM) {
+
+    // This array will hold pairs of [top, bottom] positions for each post relative to the top of the document
+    let postPositions = [];
+
+    // Loop over each child element (post) inside the content container
+    for (var i = 0; i < contentContainer.children.length; i++) {
+        let post = contentContainer.children[i];
+
+        // Gets the post div's position relative to the viewport and it's dimensions
+        let postBox = post.getBoundingClientRect();
+
+        // Position from top of viewport + scroll distance = position from top of document
+        let postDistanceTop = postBox.top + window.scrollY;
+
+        let postDistanceBottom;
+
+        if (hasSpacingClass(post)) {
+            postDistanceBottom = postDistanceTop + postBox.height - (getSpacingNumber(post) * unitM);
+        }
+        else {
+            postDistanceBottom = postDistanceTop + postBox.height;
+        }
+
+        // Add this pair to the positions array
+        positions.push([postDistanceTop, postDistanceBottom]);
+    }
+
+    return postPositions;
+}
+
+
+
+// Function to check if an element has a class starting with 'addspacing-'
+function hasSpacingClass(element) {
+
+    return Array.from(element.classList).some(cls => cls.startsWith('addspacing-'));
+
+}
+
+
+// Function to extract the number from the 'addspacing-' class
+function getSpacingNumber(element) {
+
+    const spacingClass = Array.from(element.classList).find(cls => cls.startsWith('addspacing-'));
+
+    if (spacingClass) {
+        return parseInt(spacingClass.split('-')[1], 10);
+    }
+
+    return null;
+}
+
+// Function to update the array of visible children's bounding box top values
+function updateVisibleElements() {
+  let visibleElementsTops = [];
+  const postOffice = contentContainer.children;
+
+  for (let i = 0; i < postOffice.length; i++) {
+    const postEl = postOffice[i];
+    const postBound = postEl.getBoundingClientRect();
+
+    let postHeight = postBound.bottom - postBound.top;
+
+    // Check if element is partially or fully visible in viewport vertically (partially visible in viewport)
+    const partiallyVisible = (postBound.top + postHeight >= 0) || (postBound.bottom >= (window.innerHeight + postHeight));
+
+    if (partiallyVisible) {
+      visibleElementsTops.push({ index: i, top: rect.top });
+    }
+  }
 }
 
 

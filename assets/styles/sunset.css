@@ -1,29 +1,29 @@
 :root {
-    --text-firegolden: rgb(233, 172, 18);
+    --text-golden: rgb(241, 192, 66);
     --text-alice:aliceblue;
 }
 
-#invitation-background {
+#sunset-background {
     min-height: 100vh;
     min-height: 100lvh;
-    background-image: url(../../images/invitation/wall.jpg);
+    background-image: url(../images/sunset/twig.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .collage-header {
-    color: var(--text-firegolden);
+    color: var(--text-golden);
 }
 
 .underline-main {
-    border-top-color: var(--text-firegolden);
-    width: 41%;
+    border-top-color: var(--text-golden);
+    width: 29%;
 }
 
 .underline-second {
-    border-top-color: var(--text-firegolden);
-    width: 31%;
+    border-top-color: var(--text-golden);
+    width: 20%;
 }
 
 .quotestyle {

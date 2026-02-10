@@ -6,7 +6,7 @@
 #grass-background {
     min-height: 100vh;
     min-height: 100lvh;
-    background-image: url(../../images/grass/seed.jpg);
+    background-image: url(../images/grass/seed.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

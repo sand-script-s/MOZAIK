@@ -1,5 +1,6 @@
 :root {
     --filmreel: #043041ed;
+    --greenselect: #25b666ed;
 }
 
 body {
@@ -60,10 +61,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
 }
 
 .filmreel-strip {
     fill: var(--filmreel);
+}
+
+.selector-SVG-left {
+    position: absolute;
+}
+
+.selector-strip-left {
+    fill: var(--greenselect);
 }
 
 .film-middle-content {

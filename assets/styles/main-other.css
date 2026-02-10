@@ -54,7 +54,7 @@ body {
 }
 
 .common-backdrop {
-    background-image: url(../../images/common/default-background.svg);
+    background-image: url(../images/common/default-background.svg);
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;

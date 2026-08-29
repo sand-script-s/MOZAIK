@@ -1,5 +1,5 @@
 :root {
-    --text-baguette: rgb(129, 226, 64);
+    --text-slime: rgb(142, 241, 75);
 }
 
 #crevice-background {
@@ -12,15 +12,15 @@
 }
 
 .collage-header {
-    color: var(--text-baguette);
+    color: var(--text-slime);
 }
 
 .underline-main {
-    border-top-color: var(--text-baguette);
+    border-top-color: var(--text-slime);
     width: 23%;
 }
 
 .underline-second {
-    border-top-color: var(--text-baguette);
+    border-top-color: var(--text-slime);
     width: 17%;
 }

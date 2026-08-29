@@ -1,0 +1,26 @@
+:root {
+    --text-baguette: rgb(129, 226, 64);
+}
+
+#crevice-background {
+    min-height: 100vh;
+    min-height: 100lvh;
+    background-image: url(../images/crevice/glint-large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.collage-header {
+    color: var(--text-baguette);
+}
+
+.underline-main {
+    border-top-color: var(--text-baguette);
+    width: 23%;
+}
+
+.underline-second {
+    border-top-color: var(--text-baguette);
+    width: 17%;
+}

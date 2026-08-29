@@ -104,5 +104,6 @@ $(document).ready(function(){
     openSubMenu('expanse-page', 0);
     openSubMenu('vapid-page', 0);
     openSubMenu('fields-page', 0);
+    openSubMenu('crevice-page', 0);
 
 })
